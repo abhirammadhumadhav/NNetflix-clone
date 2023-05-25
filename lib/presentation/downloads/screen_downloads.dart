@@ -32,14 +32,14 @@ class ScreenDownloads extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 40),
             child: Column(
               children: [
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     kWidth,
                     Text(
                       "Indroducing Downloads for you",
                       style: TextStyle(
                         color: kWhiteColor,
-                        fontSize: 20,
+                        fontSize: 22,
                         fontWeight: FontWeight.bold,
                       ),
                       // textAlign: TextAlign.center,
@@ -153,15 +153,15 @@ class _SmartDownloads extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 5),
+    return const Padding(
+      padding: EdgeInsets.symmetric(vertical: 5),
       child: Row(
         children: [
           kWidth,
           Wrap(
             crossAxisAlignment: WrapCrossAlignment.center,
             spacing: 5,
-            children: const [
+            children: [
               Icon(
                 Icons.settings,
                 color: kWhiteColor,
